@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌤️ SkyVibes — Weather App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Task5.css">
+</head>
+<body class="theme-fall">
+
+<div class="particle-layer" id="particleLayer"></div>
+
+<main class="wrap">
+
+  <p class="eyebrow">☁️ weather but make it aesthetic</p>
+  <h1 class="title">sky<span>vibes</span></h1>
+
+  <div class="search-row">
+    <input type="text" id="cityInput" placeholder="type a city... 🔍" autocomplete="off">
+    <button id="searchBtn" class="btn btn-main">search ✨</button>
+    <button id="locateBtn" class="btn btn-ghost">📍 use my spot</button>
+  </div>
+
+  <p class="hint" id="hint">it's giving cozy autumn energy rn 🍂 search a city or tap "use my spot" for the real deal</p>
+
+  <div class="card" id="card">
+    <div class="card-icon" id="weatherIcon">🍁</div>
+    <div class="card-temp" id="weatherTemp">--°</div>
+    <div class="card-condition" id="weatherCondition">waiting for vibes...</div>
+    <div class="card-location" id="weatherLocation">somewhere cozy</div>
+
+    <div class="meta-grid">
+      <div class="meta-item">
+        <span class="meta-label">feels like</span>
+        <span class="meta-value" id="metaFeels">--°</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">humidity</span>
+        <span class="meta-value" id="metaHumidity">--%</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">wind</span>
+        <span class="meta-value" id="metaWind">-- km/h</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script src="Task5.js"></script>
+</body>
+</html>
